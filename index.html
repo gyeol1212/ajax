@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+    <script src="main.js"></script>
+</head>
+<body>
+        <p><input type="button" id="execute" value="댕댕이!!" /></p>
+
+    <img  >
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script>
+    $("input").on("click", function() {
+        $.getJSON("https://dog.ceo/api/breeds/image/random", function(data) {
+        $("img").attr("src", data["message"])
+     })
+     
+     })
+
+</script>
+</body>
+</html>
